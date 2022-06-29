@@ -5,7 +5,7 @@
 
 - op: replace
   path: /spec/rules/0/http/paths/0/path 
-  value: /karname/dummy(/|$)(.*)
+  value: /karname-stg/dummy(/|$)(.*)
 
 
 # smalldata.digikala.com/pov
@@ -15,7 +15,7 @@
 
 - op: replace
   path: /spec/rules/1/http/paths/0/path 
-  value: /karname/dummy(/|$)(.*)
+  value: /karname-stg/dummy(/|$)(.*)
 
 - op: replace 
   path: /metadata/annotations 
