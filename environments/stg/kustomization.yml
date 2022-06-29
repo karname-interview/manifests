@@ -18,9 +18,9 @@ configMapGenerator:
   - ./configs/.env
   - ./configs/config.yml
   name: dummy
-  namespace: ki-dummy
+  namespace: ki-stg-dummy
 
 kind: Kustomization
-namespace: ki-dummy
+namespace: ki-stg-dummy
 resources:
 - ../../application
