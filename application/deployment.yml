@@ -38,11 +38,11 @@ spec:
         imagePullPolicy: IfNotPresent
         name: dummy-api
         volumeMounts:
-        - mountPath: /code/config.yml
+        - mountPath: /app/config.yml
           name: configs
           readOnly: true
           subPath: config.yml
-        - mountPath: /code/.env
+        - mountPath: /app/.env
           name: configs
           readOnly: true
           subPath: .env
