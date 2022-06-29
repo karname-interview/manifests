@@ -21,3 +21,6 @@ kind: Kustomization
 namespace: ki-stg-dummy
 resources:
 - ../../application
+images:
+- name: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
+  newTag: 17671-stg-949927f7
