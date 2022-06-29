@@ -1,0 +1,24 @@
+# analytics.digikala.com/pov
+- op: replace
+  path: /spec/rules/0/host
+  value: analytics.digikala.com
+
+- op: replace
+  path: /spec/rules/0/http/paths/0/path 
+  value: /karname-prd/dummy(/|$)(.*)
+
+
+# smalldata.digikala.com/pov
+- op: replace
+  path: /spec/rules/1/host
+  value: smalldata.digikala.com
+
+- op: replace
+  path: /spec/rules/1/http/paths/0/path 
+  value: /karname-prd/dummy(/|$)(.*)
+
+- op: replace 
+  path: /metadata/annotations 
+  value:
+    nginx.ingress.kubernetes.io/rewrite-target: /$2
+

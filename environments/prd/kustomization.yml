@@ -1,0 +1,26 @@
+replicas:
+- count: 1
+  name: dummy-api
+images:
+- name: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
+  newTag: <CD_IMAGE_TAG>
+apiVersion: kustomize.config.k8s.io/v1beta1
+patches:
+- path: ingress-patch.yml
+  target:
+    kind: Ingress
+    name: dummy-api
+
+generatorOptions:
+  disableNameSuffixHash: true
+configMapGenerator:
+- files:
+  - ./configs/.env
+  - ./configs/config.yml
+  name: dummy
+  namespace: ki-prd-dummy
+
+kind: Kustomization
+namespace: ki-prd-dummy
+resources:
+- ../../application
