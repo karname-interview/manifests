@@ -49,7 +49,7 @@ spec:
         ports:
         - containerPort: 8000
           name: web
-          protocol: HTTP
+          protocol: TCP
         resources: {}
         securityContext: {}
         terminationMessagePath: /dev/termination-log

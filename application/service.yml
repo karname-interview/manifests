@@ -11,7 +11,7 @@ spec:
   ports:
   - name: web
     port: 8000
-    protocol: HTTP
+    protocol: TCP
     targetPort: 8000
   selector:
     app.kubernetes.io/instance: dummy-api
