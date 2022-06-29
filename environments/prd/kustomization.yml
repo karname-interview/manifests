@@ -22,5 +22,8 @@ namespace: ki-prd-dummy
 resources:
 - ../../application
 images:
+- name: cicd-image-place-holder
+  newName: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
+  newTag: 17692-master-c3d9ea37
 - name: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
   newTag: 17686-master-9b2d1bee
