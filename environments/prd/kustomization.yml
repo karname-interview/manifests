@@ -3,7 +3,7 @@ replicas:
   name: dummy-api
 images:
 - name: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
-  newTag: <CD_IMAGE_TAG>
+  newTag: 17647-master-5ed714fe
 apiVersion: kustomize.config.k8s.io/v1beta1
 patches:
 - path: ingress-patch.yml
