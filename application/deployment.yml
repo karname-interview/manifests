@@ -34,7 +34,7 @@ spec:
               app.kubernetes.io/instance: dummy-api
               app.kubernetes.io/name: dummy-api
       containers:
-      - image: <CICD_IMAGE>
+      - image: kustomize-initial-image-name
         imagePullPolicy: IfNotPresent
         name: dummy-api
         volumeMounts:
