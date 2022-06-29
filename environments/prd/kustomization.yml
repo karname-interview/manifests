@@ -23,4 +23,4 @@ resources:
 - ../../application
 images:
 - name: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
-  newTag: 17670-master-f867afde
+  newTag: 17686-master-9b2d1bee
