@@ -2,6 +2,9 @@ replicas:
 - count: 1
   name: dummy-api
 images:
+- name: kustomize-initial-image-name
+  newName: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
+  newTag: 17660-dev-1ade35df
 - name: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
   newTag: 17660-dev-1ade35df
 apiVersion: kustomize.config.k8s.io/v1beta1
