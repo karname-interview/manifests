@@ -21,3 +21,6 @@ kind: Kustomization
 namespace: ki-prd-dummy
 resources:
 - ../../application
+images:
+- name: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
+  newTag: 17670-master-f867afde
