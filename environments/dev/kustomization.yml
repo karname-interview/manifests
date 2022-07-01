@@ -24,4 +24,4 @@ resources:
 images:
 - name: cicd-image-place-holder
   newName: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
-  newTag: 17744-dev-62f8043c
+  newTag: 17759-dev-1bfb51a5
