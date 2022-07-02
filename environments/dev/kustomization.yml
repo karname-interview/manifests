@@ -21,7 +21,3 @@ kind: Kustomization
 namespace: ki-dev-dummy
 resources:
 - ../../application
-images:
-- name: cicd-image-place-holder
-  newName: rm-bd-registry-01.bigdata.digikala.com/bigdata/karname/dummy-api
-  newTag: 17763-dev-2a210360
