@@ -1,17 +1,17 @@
-# analytics.digikala.com/pov
+# public_domain.com/pov
 - op: replace
   path: /spec/rules/0/host
-  value: analytics.digikala.com
+  value: public_domain.com
 
 - op: replace
   path: /spec/rules/0/http/paths/0/path 
   value: /karname-dev/dummy(/|$)(.*)
 
 
-# smalldata.digikala.com/pov
+# private_domain.com/pov
 - op: replace
   path: /spec/rules/1/host
-  value: smalldata.digikala.com
+  value: private_domain.com
 
 - op: replace
   path: /spec/rules/1/http/paths/0/path 
